@@ -1,0 +1,59 @@
+name: soft_paper
+description: Turn any paper into perfect digital paper.
+version: 1.0.0+1
+
+publish_to: 'none'
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.16.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_riverpod: ^2.4.9
+  camera: ^0.10.5+5
+  camera_android: ^0.10.5+2
+  camera_web: ^0.2.10+5
+  google_mlkit_text_recognition: ^0.8.0
+  flutter_tesseract_ocr: ^1.2.0
+  pdf: ^3.10.3
+  printing: ^5.11.0
+  syncfusion_flutter_pdf: ^23.2.7
+  sqflite: ^2.3.0
+  path_provider: ^2.1.1
+  path: ^1.8.3
+  shared_preferences: ^2.2.2
+  image: ^4.1.7
+  image_picker: ^1.0.4
+  image_cropper: ^5.0.1
+  permission_handler: ^11.1.0
+  go_router: ^12.1.3+1
+  cupertino_icons: ^1.0.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/fonts/
+  
+  fonts:
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+        - asset: assets/fonts/Inter-Medium.ttf
+        - asset: assets/fonts/Inter-Bold.ttf
+    - family: Manrope
+      fonts:
+        - asset: assets/fonts/Manrope-Regular.ttf
+        - asset: assets/fonts/Manrope-Medium.ttf
+        - asset: assets/fonts/Manrope-Bold.ttf
+    - family: Source Serif
+      fonts:
+        - asset: assets/fonts/SourceSerif-Regular.ttf
+        - asset: assets/fonts/SourceSerif-Bold.ttf
