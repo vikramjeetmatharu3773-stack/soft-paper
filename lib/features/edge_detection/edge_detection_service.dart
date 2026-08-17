@@ -216,10 +216,10 @@ class EdgeDetectionService {
       // This is a simplified version - in production, you'd use a proper transformation library
       final corrected = img.copyCrop(
         image,
-        tl['x'].toInt(),
-        tl['y'].toInt(),
-        (tr['x'] - tl['x']).toInt(),
-        (bl['y'] - tl['y']).toInt(),
+        x: tl['x'].toInt(),
+        y: tl['y'].toInt(),
+        width: (tr['x'] - tl['x']).toInt(),
+        height: (bl['y'] - tl['y']).toInt(),
       );
       
       // Save corrected image
